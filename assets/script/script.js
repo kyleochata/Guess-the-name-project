@@ -2,6 +2,7 @@ const showWord = (words) =>{
     var wordDisplay = document.createElement('h1');
     wordDisplay.textContent = words;
     title.classList.add('word');
+    mainEl.appendChild;
 }
 
 const button = (text) =>{
@@ -9,6 +10,7 @@ const button = (text) =>{
     button.textContent = text;
     title.classList.add('button');
     button.addEventListener('click', buttonPress);
+    mainEl.appendChild;
 
 }
 
@@ -16,11 +18,13 @@ function buttonPress () {
     //starts game or resets page
 }
 
+var secondsLeft = 120;
 
 const timer = () =>{
-    var time = document.querySelector(".time");
-    var secondsLeft = 0;
+    var time = document.createElement("h2");
     time.textContent = " Time: " + secondsLeft;
+    title.classList.add('time');
+    mainEl.appendChild;
 }
 /*
 
@@ -39,8 +43,5 @@ function setTime() {
 
   }, 1000);
 }
-
-
-
 
 */
